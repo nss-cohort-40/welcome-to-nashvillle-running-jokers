@@ -30,8 +30,8 @@ const fetchArtEntry = (artsInput) => {
         artsArray.push({ "name": name, "address": address })
       }
 
-      parksArray.push("Art");
-      parksArray.push("artOutput");
+      artsArray.push("Art");
+      artsArray.push("artOutput");
 
       outputResultsToDOM(artsArray);
     }

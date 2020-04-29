@@ -1,11 +1,4 @@
-// dependecies: fetchingData.js,
-
 document.querySelector("#parksButton").addEventListener("click", () => {
-  let parkObj = {}; //or array?
-  // let parkAddy = document.querySelector("#parkAddy");
-  // let parkName = document.querySelector("#parkName");
-  document.querySelector("#parksInput").value += parkObj;
-  fetchParkEntry(parkParams);
+  let parkSearch = document.querySelector("#parksInput").value;
+  fetchParkEntry(parkSearch);
 });
-
-// const parkResults = document.querySelector("#parksOutput");

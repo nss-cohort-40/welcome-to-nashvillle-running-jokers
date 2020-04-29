@@ -17,12 +17,20 @@
     <h2>Search for stuff to do today</h2>
     <section>
       <div>
-        <input type="text" id="parksInput" />
+        <input type="text" id="parksInput" placeholder="Search parks by feature" />
         <button id="parksButton">Search</button>
       </div>
       <div>
-        <input type="text" id="artInput" />
+        <input type="text" id="artInput" placeholder="Search art by description" />
         <button id="artButton">Search</button>
+      </div>
+      <div>
+        <input type="text" id="foodInput" placeholder="Search restaurant by food" />
+        <button id="foodButton">Search</button>
+      </div>
+      <div>
+        <input type="text" id="musicInput" placeholder="Search concerts by genre" />
+        <button id="musicButton">Search</button>
       </div>
     </section>
     <section id="resultsOutput"></section>
@@ -30,13 +38,19 @@
       <h2>My Itinerary</h2>
       <div id="parksOutput"></div>
       <div id="artOutput"></div>
+      <div id="foodOutput"></div>
+      <div id="musicOutput"></div>
     </section>
 
     <section></section>
     <footer></footer>
     <script src="/scripts/DOMHandler.js"></script>
     <script src="scripts/fetchingData.js"></script>
+    <script src="scripts/arts.js"></script>
     <script src="scripts/parks.js"></script>
+    <script src="scripts/food.js"></script>
+    <script src="scripts/music.js"></script>
+
 </body>
 
 </html>

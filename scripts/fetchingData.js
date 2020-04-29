@@ -9,15 +9,15 @@ const fetchParkEntry = (parksInput) => {
         const obj = JSON.parse(home);
         let address = obj.address;
         parksArray.push({ "name": name, "address": address })
-      }
 
+      }
+      parksArray.push("Park");
+      parksArray.push("parksOutput");
       console.log(parksArray);
-      //call John's function that's posting to the DOM
+      outputResultsToDOM(parksArray);
     }
     )
 }
-
-fetchParkEntry('soccer');
 
 const fetchArtEntry = (artsInput) => {
   fetch(`https://data.nashville.gov/resource/eviu-nxp6.json?$q=${artsInput}&$limit=3`)
@@ -30,9 +30,11 @@ const fetchArtEntry = (artsInput) => {
         artsArray.push({ "name": name, "address": address })
       }
 
-      console.log(artsArray);
+      parksArray.push("Art");
+      parksArray.push("artOutput");
+
+      outputResultsToDOM(artsArray);
     }
     )
 }
 
-fetchArtEntry('museum')

@@ -25,21 +25,3 @@ function outputResultsToDOM(arr) {
     }
     outputElement.appendChild(ol)
 }
-
-let objArr = [
-    {
-        name: "John's Park",
-        address: "2215 Oakbranch Circle"
-    },
-    {
-        name: "John's Park",
-        address: "2215 Oakbranch "
-    },
-    {
-        name: "John's Park",
-        address: "2215 Circle"
-    },
-    "Park",
-    "parksOutput"
-]
-outputResultsToDOM(objArr)

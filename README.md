@@ -1,8 +1,6 @@
 # Welcome to Nashville: Build an itinerary for a day trip to Music City
-
 ## Running Jokers Team
 
----
 
 To run this code:
 
@@ -19,7 +17,6 @@ In this app users can search for four different things to do/visit in Nashville:
 - restaurants -- using the [OpenTable API](opentable.herokuapp.com/)
 - concerts -- using the [Ticketmaster's Discovery API](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
 
----
 
 For each category, users' input returns three search results, one of which can be saved to "My Itinerary"
 Subsequent saves within the same category replaces previous save

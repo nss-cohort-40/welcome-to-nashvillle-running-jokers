@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/styles/style.css" />
-    <meta charset="utf-8" />
-    <title>Nashville Ventures</title>
-    <link rel="stylesheet" href="./styles/" />
-  </head>
-  <body>
-    <nav></nav>
-    <header><h1>Welcome To Nashville</h1></header>
-    <article>
-      <h2>Search for stuff to do today</h2>
-      <section>
-        <div>
-          <input type="text" id="parksInput" />
-          <button id="parksButton">Search</button>
-        </div>
-        <div>
-          <input type="text" id="artInput" />
-          <button id="artButton">Search</button>
-        </div>
-      </section>
-      <section id="resultsOutput"></section>
-      <section id="itineraryOutput">
-        <h2>My Itinerary</h2>
-        <div id="parksOutput"></div>
-        <div id="artOutput"></div>
-      </section>
 
-      <section></section>
-      <footer></footer>
-    </article>
+<head>
+  <link rel="stylesheet" href="/styles/style.css" />
+  <meta charset="utf-8" />
+  <title>Nashville Ventures</title>
+  <link rel="stylesheet" href="./styles/" />
+</head>
+
+<body>
+  <nav></nav>
+  <header>
+    <h1>Welcome To Nashville</h1>
+  </header>
+  <article>
+    <h2>Search for stuff to do today</h2>
+    <section>
+      <div>
+        <input type="text" id="parksInput" />
+        <button id="parksButton">Search</button>
+      </div>
+      <div>
+        <input type="text" id="artInput" />
+        <button id="artButton">Search</button>
+      </div>
+    </section>
+    <section id="resultsOutput"></section>
+    <section id="itineraryOutput">
+      <h2>My Itinerary</h2>
+      <div id="parksOutput"></div>
+      <div id="artOutput"></div>
+    </section>
+
+    <section></section>
     <footer></footer>
     <script src="/scripts/DOMHandler.js"></script>
-  </body>
+    <script src="scripts/fetchingData.js"></script>
+</body>
+
 </html>

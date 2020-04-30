@@ -16,9 +16,9 @@
   "itinerary": [
     {
       "id": 1,
-      "park": "<li>Park: Potters Field, 2301 Metro Center Blvd </li>",
+      "park": "<li>Park: East Park, 700 Woodland St </li>",
       "art": "<li>Art: Adanedi, Nashville Farmers' Market </li>",
-      "food": "",
+      "food": "<li>Restaurants: City Fire, 610 12th Avenue S. </li>",
       "music": ""
     }
   ],

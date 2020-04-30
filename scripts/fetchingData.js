@@ -82,3 +82,16 @@ const fetchRestaurant = (uInput) => {
       outputResultsToDOM(arrayRestaurants);
     });
 };
+
+const fetchItinerary = () => {
+  fetch("http://localhost:8088/itinerary")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data)
+    document.getElementById("parksOutput").innerHTML = data[0].park
+    document.getElementById("artOutput").innerHTML = data[0].art
+    document.getElementById("foodOutput").innerHTML = data[0].food
+    document.getElementById("musicOutput").innerHTML = data[0].music
+  })
+}
+fetchItinerary()

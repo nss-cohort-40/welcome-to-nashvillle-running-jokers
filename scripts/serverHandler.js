@@ -1,7 +1,8 @@
 function sendToServer(json, url){
-    console.log("Sending to server");
+    console.log("Deleting from server");
     deleteFromServer(url)
     setTimeout(function() {
+        console.log("Sending to server")
         postToServer(json, url)
     }, 2000) 
     
@@ -20,12 +21,12 @@ function postToServer(json, url){
     // request.onload = onload;
     request.send(JSON.stringify(json));
 }
-  sendToServer(
-      {
-          id: 1,
-          park: "Henry Horton",
-          art: "Frist Center",
-          restaurant: "Hattie B's"
-      },
-      "http://localhost:8088/itinerary"
-  )
+//   sendToServer(
+//       {
+//           id: 1,
+//           park: "Henry Horton",
+//           art: "Frist Center",
+//           restaurant: "Hattie B's"
+//       },
+//       "http://localhost:8088/itinerary"
+//   )

@@ -18,6 +18,15 @@ function outputResultsToDOM(arr) {
         li.removeChild(button);
         li.innerHTML = `${arr[arr.length - 2]}: ${li.innerHTML}`;
         saveElement.appendChild(li);
+        let saveObject = {
+          id: 1,
+          park: document.getElementById("parksOutput").innerHTML,
+          art: document.getElementById("artOutput").innerHTML,
+          food: document.getElementById("foodOutput").innerHTML,
+          music: document.getElementById("musicOutput").innerHTML
+        }
+        sendToServer(saveObject, "http://localhost:8088/itinerary")
+
       });
       li.appendChild(button);
       ol.appendChild(li);

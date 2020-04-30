@@ -16,9 +16,10 @@
   "itinerary": [
     {
       "id": 1,
-      "park": "Henry Horton",
-      "art": "Frist Center",
-      "restaurant": "Hattie B's"
+      "park": "<li>Park: Potters Field, 2301 Metro Center Blvd </li>",
+      "art": "<li>Art: Adanedi, Nashville Farmers' Market </li>",
+      "food": "",
+      "music": ""
     }
   ],
   "permissions": [

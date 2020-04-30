@@ -16,8 +16,8 @@
   "itinerary": [
     {
       "id": 1,
-      "park": "<li>Park: Potters Field, 2301 Metro Center Blvd </li>",
-      "art": "<li>Art: Adanedi, Nashville Farmers' Market </li>",
+      "park": "",
+      "art": "",
       "food": "",
       "music": ""
     }

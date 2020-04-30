@@ -20,11 +20,10 @@ const fetchRestaurant = (uInput) => {
                     rr.address = restaurants[i].address;
                     arrayRestaurants.unshift(rr);
                 }
-                // Garantee the Array will have up to 3 restaurants
+                // Garantee the arrayRestaurants will have up to 3 restaurants + the two last elements are for integration
                 if (arrayRestaurants.length === 5) {
                     break;
                 }
-
             }
 
             // Calling outputResultsToDOM() to render the on the HTML

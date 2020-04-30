@@ -87,11 +87,22 @@ const fetchItinerary = () => {
   fetch("http://localhost:8088/itinerary")
   .then((response) => response.json())
   .then((data) => {
-    console.log(data)
-    document.getElementById("parksOutput").innerHTML = data[0].park
-    document.getElementById("artOutput").innerHTML = data[0].art
-    document.getElementById("foodOutput").innerHTML = data[0].food
-    document.getElementById("musicOutput").innerHTML = data[0].music
+    if (data[0] != undefined){
+      console.log(data)
+      document.getElementById("parksOutput").innerHTML = data[0].park
+      document.getElementById("artOutput").innerHTML = data[0].art
+      document.getElementById("foodOutput").innerHTML = data[0].food
+      document.getElementById("musicOutput").innerHTML = data[0].music
+    } else {
+      let object = {
+        id: 1,
+        park: "",
+        art: "",
+        food: "",
+        music: ""
+      }
+      postToServer(object, "http://localhost:8088/itinerary")
+    }
   })
 }
 fetchItinerary()

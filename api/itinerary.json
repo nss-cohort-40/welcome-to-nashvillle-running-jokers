@@ -16,10 +16,10 @@
   "itinerary": [
     {
       "id": 1,
-      "park": "<li>Park: Metro Soccer Complex, 1266 Donelson Pike </li>",
-      "art": "<li>Art: LGBT Liberation, Metro Office Building </li>",
-      "food": "<li>Restaurants: Capitol Grille - Hermitage Hotel - Nashville, 231 Sixth Avenue North </li>",
-      "music": "<li>Music: Lady Antebellum: Ocean Tour 2020, Bridgestone Arena </li>"
+      "park": "",
+      "art": "",
+      "food": "",
+      "music": ""
     }
   ],
   "permissions": [

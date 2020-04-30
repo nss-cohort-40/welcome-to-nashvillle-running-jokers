@@ -2,7 +2,7 @@ const fetchParkEntry = (parksInput) => {
   fetch(
     `https://data.nashville.gov/resource/74d7-b74t.json?$q=${parksInput}&$limit=3`
   )
-    .then((parkEntries) => parkEntries.json()) // Parse as JSON
+    .then((parkEntries) => parkEntries.json())
     .then((parks) => {
       const parksArray = [];
       for (let i = 0; i < parks.length; i++) {
@@ -23,7 +23,7 @@ const fetchArtEntry = (artsInput) => {
   fetch(
     `https://data.nashville.gov/resource/eviu-nxp6.json?$q=${artsInput}&$limit=3`
   )
-    .then((artEntries) => artEntries.json()) // Parse as JSON
+    .then((artEntries) => artEntries.json())
     .then((arts) => {
       const artsArray = [];
       for (let i = 0; i < arts.length; i++) {
@@ -39,10 +39,10 @@ const fetchArtEntry = (artsInput) => {
     });
 };
 
-const fetchMusicEntry = (concertsInput) => {
+const fetchMusicEntry = (musicInput) => {
   let apiURL = "https://app.ticketmaster.com/discovery/v2/events";
   let apiKey = appKeys.appKey;
-  fetch(`${apiURL}?classificationName=music&dmaId=343&${apiKey}`)
+  fetch(`${apiURL}?classificationName=${musicInput}&dmaId=343&${apiKey}`)
     .then((music) => music.json())
     .then((music) => {
       const musicArray = [];

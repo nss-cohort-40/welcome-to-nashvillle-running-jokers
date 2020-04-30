@@ -1,8 +1,13 @@
 function sendToServer(json, url){
     console.log("Sending to server");
+    deleteFromServer(url)
+    .then(postToServer(json, url))
+}
+
+function deleteFromServer(url){
     fetch(`${url}/1`, {
-        method: 'DELETE'
-    }).then(postToServer(json, url))
+    method: 'DELETE'
+    })
 }
 
 function postToServer(json, url){
@@ -11,7 +16,6 @@ function postToServer(json, url){
     request.setRequestHeader("Content-Type", "application/json");
     // request.onload = onload;
     request.send(JSON.stringify(json));
-    
 }
   sendToServer(
       {

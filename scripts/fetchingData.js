@@ -46,7 +46,7 @@ const fetchMusicEntry = (musicInput) => {
     .then((music) => music.json())
     .then((music) => {
       const musicArray = [];
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < music._embedded.events.length && i < 3; i++) {
         let name = music._embedded.events[i].name;
         let address = music._embedded.events[i]._embedded.venues[0].name;
         musicArray.push({ name: name, address: address });
@@ -55,5 +55,28 @@ const fetchMusicEntry = (musicInput) => {
       musicArray.push("musicOutput");
 
       outputResultsToDOM(musicArray);
+    });
+};
+
+const fetchRestaurant = (uInput) => {
+  fetch("https:/opentable.herokuapp.com/api/restaurants?city=Nashville")
+    .then((response) => response.json())
+    .then((data) => {
+      let restaurants = data.restaurants;
+      let arrayRestaurants = [];
+      arrayRestaurants.push("Restaurants");
+      arrayRestaurants.push("foodOutput");
+      for (let i = 0; i < restaurants.length; i++) {
+        if (restaurants[i].name.toLowerCase().includes(uInput.toLowerCase())) {
+          let rr = {};
+          rr.name = restaurants[i].name;
+          rr.address = restaurants[i].address;
+          arrayRestaurants.unshift(rr);
+        }
+        if (arrayRestaurants.length === 5) {
+          break;
+        }
+      }
+      outputResultsToDOM(arrayRestaurants);
     });
 };

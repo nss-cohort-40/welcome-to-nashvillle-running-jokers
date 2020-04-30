@@ -9,7 +9,7 @@ function outputResultsToDOM(arr) {
   if (typeof arr[0] === "object") {
     for (let i = 0; i < arr.length - 2; i++) {
       let li = document.createElement("li");
-      li.innerHTML = arr[i].name + " " + arr[i].address + " ";
+      li.innerHTML = arr[i].name + ", " + arr[i].address + " ";
       let button = document.createElement("button");
       button.innerHTML = "Save";
       button.id = `${arr[arr.length - 2]}${i}`;

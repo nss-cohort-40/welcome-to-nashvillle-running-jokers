@@ -16,9 +16,10 @@
   "itinerary": [
     {
       "id": 1,
-      "park": "Henry Horton",
-      "art": "Frist Center",
-      "restaurant": "Hattie B's"
+      "park": "",
+      "art": "<li>Art: 4743 REASONs, Historic Metro Courthouse </li>",
+      "food": "",
+      "music": ""
     }
   ],
   "permissions": [

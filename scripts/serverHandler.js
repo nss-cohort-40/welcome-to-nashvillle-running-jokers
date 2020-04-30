@@ -1,7 +1,10 @@
 function sendToServer(json, url){
     console.log("Sending to server");
     deleteFromServer(url)
-    .then(postToServer(json, url))
+    setTimeout(function() {
+        postToServer(json, url)
+    }, 2000) 
+    
 }
 
 function deleteFromServer(url){

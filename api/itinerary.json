@@ -13,7 +13,14 @@
       "postId": 1
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "id": 1,
+      "park": "Henry Horton",
+      "art": "Frist Center",
+      "restaurant": "Hattie B's"
+    }
+  ],
   "permissions": [
     "http://localhost:8080/"
   ]

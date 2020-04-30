@@ -52,7 +52,7 @@ const fetchMusicEntry = (musicInput) => {
           let address = music._embedded.events[i]._embedded.venues[0].name;
           musicArray.push({ name: name, address: address });
         }
-      } catch (err) {}
+      } catch (err) { }
       musicArray.push("Music");
       musicArray.push("musicOutput");
 

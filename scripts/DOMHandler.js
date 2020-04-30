@@ -10,6 +10,13 @@ function outputResultsToDOM(arr) {
     for (let i = 0; i < arr.length - 2; i++) {
       let li = document.createElement("li");
       li.innerHTML = arr[i].name + ", " + arr[i].address + " ";
+      if (arr[arr.length - 2] === "Art") {
+        let a = document.createElement("a");
+        a.innerHTML = "More info";
+        a.href = arr[i].url;
+        a.setAttribute("target", "_blank");
+        li.appendChild(a);
+      }
       let button = document.createElement("button");
       button.innerHTML = "Save";
       button.id = `${arr[arr.length - 2]}${i}`;

@@ -28,7 +28,10 @@ const fetchArtEntry = (artsInput) => {
       for (let i = 0; i < arts.length; i++) {
         let name = arts[i].artwork;
         let address = arts[i].location;
-        artsArray.push({ name: name, address: address });
+        let url = arts[i]["page_link"]["url"];
+        //remove this log 
+        console.log(url);
+        artsArray.push({ name: name, address: address, url: url });
       }
 
       artsArray.push("Art");
@@ -85,24 +88,24 @@ const fetchRestaurant = (uInput) => {
 
 const fetchItinerary = () => {
   fetch("http://localhost:8088/itinerary")
-  .then((response) => response.json())
-  .then((data) => {
-    if (data[0] != undefined){
-      console.log(data)
-      document.getElementById("parksOutput").innerHTML = data[0].park
-      document.getElementById("artOutput").innerHTML = data[0].art
-      document.getElementById("foodOutput").innerHTML = data[0].food
-      document.getElementById("musicOutput").innerHTML = data[0].music
-    } else {
-      let object = {
-        id: 1,
-        park: "",
-        art: "",
-        food: "",
-        music: ""
+    .then((response) => response.json())
+    .then((data) => {
+      if (data[0] != undefined) {
+        console.log(data)
+        document.getElementById("parksOutput").innerHTML = data[0].park
+        document.getElementById("artOutput").innerHTML = data[0].art
+        document.getElementById("foodOutput").innerHTML = data[0].food
+        document.getElementById("musicOutput").innerHTML = data[0].music
+      } else {
+        let object = {
+          id: 1,
+          park: "",
+          art: "",
+          food: "",
+          music: ""
+        }
+        postToServer(object, "http://localhost:8088/itinerary")
       }
-      postToServer(object, "http://localhost:8088/itinerary")
-    }
-  })
+    })
 }
 fetchItinerary()

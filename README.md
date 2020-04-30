@@ -1,11 +1,11 @@
 # Welcome to Nashville: Build an itinerary for a day trip to Music City
-## Running Jokers Team
 
+## Running Jokers Team
 
 To run this code:
 
 1. Clone it down
-2. Configure your API keys (read it at **_Notes about the APIs_** section bellow)
+2. Configure your API keys (read it at **_Notes about the APIs_** section below)
 3. In the project root, run your dev server of choice ( serve and http-server are nice choices)
 
 ## App Features
@@ -16,7 +16,6 @@ In this app users can search for four different things to do/visit in Nashville:
 - public art collections -- using Nashville [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/eviu-nxp6)
 - restaurants -- using the [OpenTable API](opentable.herokuapp.com/)
 - concerts -- using the [Ticketmaster's Discovery API](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
-
 
 For each category, users' input returns three search results, one of which can be saved to "My Itinerary"
 Subsequent saves within the same category replaces previous save
@@ -35,7 +34,7 @@ The Ticketmaster API requires an `apikey` to be included in the url.
 
 ```
 const appKeys = {
-  appKey: "insert-your-consumer-key-here",
+  appKey: "apikey=insert-your-consumer-key-here",
 };
 ```
 

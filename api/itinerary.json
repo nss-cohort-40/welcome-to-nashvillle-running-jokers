@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "itinerary": [
+    {
+      "id": 1,
+      "park": "<li>Park: Potters Field, 2301 Metro Center Blvd </li>",
+      "art": "<li>Art: Adanedi, Nashville Farmers' Market </li>",
+      "food": "",
+      "music": ""
+    }
+  ],
+  "permissions": [
+    "http://localhost:8080/"
+  ]
+}

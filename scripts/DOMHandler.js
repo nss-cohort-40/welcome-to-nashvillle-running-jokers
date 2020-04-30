@@ -9,7 +9,7 @@ function outputResultsToDOM(arr) {
   if (typeof arr[0] === "object") {
     for (let i = 0; i < arr.length - 2; i++) {
       let li = document.createElement("li");
-      li.innerHTML = arr[i].name + " " + arr[i].address + " ";
+      li.innerHTML = arr[i].name + ", " + arr[i].address + " ";
       let button = document.createElement("button");
       button.innerHTML = "Save";
       button.id = `${arr[arr.length - 2]}${i}`;
@@ -18,6 +18,15 @@ function outputResultsToDOM(arr) {
         li.removeChild(button);
         li.innerHTML = `${arr[arr.length - 2]}: ${li.innerHTML}`;
         saveElement.appendChild(li);
+        let saveObject = {
+          id: 1,
+          park: document.getElementById("parksOutput").innerHTML,
+          art: document.getElementById("artOutput").innerHTML,
+          food: document.getElementById("foodOutput").innerHTML,
+          music: document.getElementById("musicOutput").innerHTML
+        }
+        sendToServer(saveObject, "http://localhost:8088/itinerary")
+
       });
       li.appendChild(button);
       ol.appendChild(li);

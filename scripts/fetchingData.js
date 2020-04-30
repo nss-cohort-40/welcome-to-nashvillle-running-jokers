@@ -46,11 +46,13 @@ const fetchMusicEntry = (musicInput) => {
     .then((music) => music.json())
     .then((music) => {
       const musicArray = [];
-      for (let i = 0; i < music._embedded.events.length && i < 3; i++) {
-        let name = music._embedded.events[i].name;
-        let address = music._embedded.events[i]._embedded.venues[0].name;
-        musicArray.push({ name: name, address: address });
-      }
+      try {
+        for (let i = 0; i < music._embedded.events.length && i < 3; i++) {
+          let name = music._embedded.events[i].name;
+          let address = music._embedded.events[i]._embedded.venues[0].name;
+          musicArray.push({ name: name, address: address });
+        }
+      } catch (err) {}
       musicArray.push("Music");
       musicArray.push("musicOutput");
 

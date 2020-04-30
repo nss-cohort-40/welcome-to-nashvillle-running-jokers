@@ -34,7 +34,7 @@ The Ticketmaster API requires an `apikey` to be included in the url.
 
 ```
 const appKeys = {
-  appKey: "insert-your-consumer-key-here",
+  appKey: "apikey=insert-your-consumer-key-here",
 };
 ```
 

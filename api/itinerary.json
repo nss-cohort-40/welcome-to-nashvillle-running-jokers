@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "itinerary": [
+    {
+      "id": 1,
+      "park": "Henry Horton",
+      "art": "Frist Center",
+      "restaurant": "Hattie B's"
+    },
+    {
+      "id": 2,
+      "park": " Horton",
+      "art": "Center",
+      "restaurant": " B's"
+    },
+    {
+      "id": 3,
+      "park": " Horton",
+      "art": "Center",
+      "restaurant": " B's"
+    }
+  ],
+  "permissions": [
+    "http://localhost:8080/"
+  ]
+}

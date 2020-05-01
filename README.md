@@ -1,6 +1,8 @@
 # Nashville Ventures
 
-![Group Logo](/src/grouplogo.png)
+---
+
+---
 
 To run this code:
 
@@ -43,3 +45,7 @@ const appKeys = {
 ### Nashville Metro Open Data API & Open Table API
 
 These APIs do not require an API key.
+
+### Contributors
+
+![Group Logo](/src/grouplogo.png)

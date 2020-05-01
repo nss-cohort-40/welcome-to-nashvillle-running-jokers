@@ -1,6 +1,6 @@
 # <div align="center">Nashville Ventures</div>
 
-#### BROUGHT TO YOU BY:
+#### <div align="center">BROUGHT TO YOU BY:</div>
 
 ## ![Group Logo](/src/grouplogo.png)
 

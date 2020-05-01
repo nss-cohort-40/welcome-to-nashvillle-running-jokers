@@ -1,7 +1,14 @@
-# Welcome to Nashville: Build an itinerary for a day trip to Music City
+# <div align="center">Nashville Ventures</div>
 
-## Running Jokers Team
-![Group Logo](/src/grouplogo.png)
+#### <div align="center">BROUGHT TO YOU BY:</div>
+
+## ![Group Logo](/src/grouplogo.png)
+
+---
+
+This web app is designed to create a personalized itinerary for visitors to Nashville. Users can create a day's itinerary by searching for local parks, restaurants, art, and concerts and saving options that interest them.
+
+## Getting Started
 
 To run this code:
 
@@ -11,12 +18,12 @@ To run this code:
 
 ## App Features
 
-In this app users can search for four different things to do/visit in Nashville:
+In this app users can search for four different things to do/visit in Nashville
 
-- parks -- using the Nashville [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/xbru-cfzi)
-- public art collections -- using Nashville [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/eviu-nxp6)
-- restaurants -- using the [OpenTable API](opentable.herokuapp.com/)
-- concerts -- using the [Ticketmaster's Discovery API](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
+- Parks: [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/xbru-cfzi)
+- Public Art Collections: [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/eviu-nxp6)
+- Restaurants: [OpenTable API](opentable.herokuapp.com/)
+- Concerts: [Ticketmaster's Discovery API](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
 
 For each category, users' input returns three search results, one of which can be saved to "My Itinerary"
 Subsequent saves within the same category replaces previous save
@@ -44,3 +51,10 @@ const appKeys = {
 ### Nashville Metro Open Data API & Open Table API
 
 These APIs do not require an API key.
+
+### Contributors
+
+- Felipe Moura
+- John Bain
+- Daniel Meza
+- Tanner Brainard

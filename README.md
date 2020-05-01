@@ -1,6 +1,7 @@
 # Welcome to Nashville: Build an itinerary for a day trip to Music City
 
 ## Running Jokers Team
+![Group Logo](/src/grouplogo.png)
 
 To run this code:
 

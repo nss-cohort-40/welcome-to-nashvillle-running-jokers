@@ -54,7 +54,7 @@ These APIs do not require an API key.
 
 ### Contributors
 
--Felipe Moura
--John Bain
--Daniel Meza
--Tanner Brainard
+- Felipe Moura
+- John Bain
+- Daniel Meza
+- Tanner Brainard

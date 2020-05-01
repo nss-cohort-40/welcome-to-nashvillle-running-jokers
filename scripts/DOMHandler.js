@@ -22,9 +22,11 @@ function outputResultsToDOM(arr) {
       button.id = `${arr[arr.length - 2]}${i}`;
       button.addEventListener("click", () => {
         saveElement.innerHTML = "";
-        li.removeChild(button);
-        li.innerHTML = `${arr[arr.length - 2]}: ${li.innerHTML}`;
-        saveElement.appendChild(li);
+        li.removeChild(button)
+        let newLi = li.cloneNode(true)
+        li.appendChild(button)
+        newLi.innerHTML = `${arr[arr.length - 2]}: ${newLi.innerHTML}`;
+        saveElement.appendChild(newLi);
         let saveObject = {
           id: 1,
           park: document.getElementById("parksOutput").innerHTML,

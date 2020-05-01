@@ -16,10 +16,10 @@
   "itinerary": [
     {
       "id": 1,
-      "park": "",
-      "art": "",
-      "food": "",
-      "music": ""
+      "park": "<li>Park: Potters Field, 2301 Metro Center Blvd </li>",
+      "art": "<li>Art: 4743 REASONs, Historic Metro Courthouse <a href=\"https://www.metroartsnashville.com/fullscreen-page/comp-jv6uwm9t/3a098e98-fb51-47f2-b26a-dc7135cd6b44/24/%3Fi%3D24%26p%3Ddqpfk%26s%3Dstyle-jv6uwma1%26rl%3D1\" target=\"_blank\">More info</a></li>",
+      "food": "<li>Restaurants: Midtown Cafe, 102 19th Avenue South </li>",
+      "music": "<li>Music: Lady Antebellum: Ocean Tour 2020, Bridgestone Arena </li>"
     }
   ],
   "permissions": [

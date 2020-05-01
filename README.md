@@ -2,6 +2,8 @@
 
 ---
 
+## ![Group Logo](/src/grouplogo.png)
+
 ---
 
 To run this code:
@@ -48,4 +50,7 @@ These APIs do not require an API key.
 
 ### Contributors
 
-![Group Logo](/src/grouplogo.png)
+-Felipe Moura
+-John Bain
+-Daniel Meza
+-Tanner Brainard

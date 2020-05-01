@@ -1,6 +1,6 @@
 # Nashville Ventures
 
-####BROUGHT TO YOU BY:
+#### BROUGHT TO YOU BY:
 
 ## ![Group Logo](/src/grouplogo.png)
 

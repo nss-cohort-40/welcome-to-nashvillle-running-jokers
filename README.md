@@ -1,10 +1,14 @@
 # Nashville Ventures
 
----
+####BROUGHT TO YOU BY:
 
 ## ![Group Logo](/src/grouplogo.png)
 
 ---
+
+This web app is designed to create a personalized itinerary for visitors to Nashville. Users can create a day's itinerary by searching for local parks, restaurants, art, and concerts and saving options that interest them.
+
+## Getting Started
 
 To run this code:
 
@@ -14,7 +18,7 @@ To run this code:
 
 ## App Features
 
-In this app users can search for four different things to do/visit in Nashville:
+In this app users can search for four different things to do/visit in Nashville
 
 - Parks: [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/xbru-cfzi)
 - Public Art Collections: [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/eviu-nxp6)

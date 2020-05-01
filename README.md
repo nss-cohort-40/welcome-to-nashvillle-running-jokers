@@ -1,6 +1,5 @@
-# Welcome to Nashville: Build an itinerary for a day trip to Music City
+# Nashville Ventures
 
-## Running Jokers Team
 ![Group Logo](/src/grouplogo.png)
 
 To run this code:
@@ -13,10 +12,10 @@ To run this code:
 
 In this app users can search for four different things to do/visit in Nashville:
 
-- parks -- using the Nashville [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/xbru-cfzi)
-- public art collections -- using Nashville [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/eviu-nxp6)
-- restaurants -- using the [OpenTable API](opentable.herokuapp.com/)
-- concerts -- using the [Ticketmaster's Discovery API](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
+- Parks: [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/xbru-cfzi)
+- Public Art Collections: [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/eviu-nxp6)
+- Restaurants: [OpenTable API](opentable.herokuapp.com/)
+- Concerts: [Ticketmaster's Discovery API](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
 
 For each category, users' input returns three search results, one of which can be saved to "My Itinerary"
 Subsequent saves within the same category replaces previous save
